@@ -17,7 +17,7 @@ class ClassToTestTest {
     val lambdaToVerify2: (Int) -> Unit = fake()
 
     @Verify
-    val interfaceToVerify1 = fake<InterfaceToVerify1>()
+    private val interfaceToVerify1 = fake<InterfaceToVerify1>()
 
     @Verify
     val interfaceToVerify2 = fake(InterfaceToVerify2::class.java)

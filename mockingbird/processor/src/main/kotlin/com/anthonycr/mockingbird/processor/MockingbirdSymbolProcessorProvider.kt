@@ -12,7 +12,7 @@ class MockingbirdSymbolProcessorProvider : SymbolProcessorProvider {
     ): SymbolProcessor = MockingbirdSymbolProcessor(
         environment.codeGenerator,
         environment.logger,
-        FakeImplementationGenerator(),
+        FakeImplementationGenerator(environment.logger),
         FakeFunctionGenerator()
     )
 }

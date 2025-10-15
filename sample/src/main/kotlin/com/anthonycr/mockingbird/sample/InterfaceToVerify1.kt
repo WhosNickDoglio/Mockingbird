@@ -1,6 +1,6 @@
 package com.anthonycr.mockingbird.sample
 
-interface InterfaceToVerify1 {
+internal interface InterfaceToVerify1 {
 
     fun performAction1(one: Int)
 
@@ -10,4 +10,8 @@ interface InterfaceToVerify1 {
 
     fun performAction4(one: String, two: Int, exception: Exception)
 
+    fun performAction5(foo: Foo)
+
 }
+
+internal data class Foo(val string: String)

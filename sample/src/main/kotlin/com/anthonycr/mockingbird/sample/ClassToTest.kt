@@ -1,6 +1,6 @@
 package com.anthonycr.mockingbird.sample
 
-class ClassToTest(
+internal class ClassToTest(
     private val lambdaToVerify1: (String) -> Unit,
     private val lambdaToVerify2: (Int) -> Unit,
     private val interfaceToVerify1: InterfaceToVerify1,
